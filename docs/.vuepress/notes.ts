@@ -33,6 +33,13 @@ const demoNote = defineNoteConfig({
   // sidebar: 'auto',
 })
 
+const notekyEnglish = defineNoteConfig({
+        dir: 'kyEnglish',
+        link: '/kyEnglish/',
+        sidebar: 'auto',
+    },
+)
+
 /**
  * 导出所有的 note
  * 每一个 note 都应该填入到 `notes.notes` 数组中
@@ -41,5 +48,5 @@ const demoNote = defineNoteConfig({
 export default defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [demoNote],
+  notes: [demoNote, notekyEnglish],
 })
